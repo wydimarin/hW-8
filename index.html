@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#greycol {
+    color: grey;
+}
+
+.text-box div p:contains("Пофарбуйте мене в червоний колір") {
+    color: red;
+}
+
+.text-box p.yellow {
+    color: yellow;
+}
+
+.text-box *:not(h3):not(p):not(#greycol):not(.yellow) {
+    
+}
+.text{
+    color: red;
+}
+.text2{
+    color: green;
+}
+ul.first li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+ul.second li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+ul.third li:first-child {
+    font-weight: bold;
+}
+
+ul.fourth li:last-child {
+    text-decoration: underline;
+}
+
+ul.fifth li:hover {
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="text-box">
+        <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id='greycol'>Пофарбуйте мене в сірий колір (color:grey).</p>
+        <div>Даний елемент має залишитись неоформленим.</div>
+        <div><p class="text">Пофарбуйте мене в червоний колір (color:red).</p></div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p class="text2">Пофарбуйте мене в зелений колір (color:green).</p>
+       <p class='yellow'>Пофарбуйте мене в жовтий колір (color:yellow).</p>
+    </div>
+
+
+
+<div>
+    <ul class="first">
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+    </ul>
+    <ul class="second">
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+    </ul>
+    <ul class="third">
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+    </ul>
+    <ul class="fourth">
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+    </ul>
+    <ul class="fifth">
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+        <li>математка</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
